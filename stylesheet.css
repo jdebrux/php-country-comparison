@@ -1,0 +1,148 @@
+:root {
+  --primary: #BB86FC;
+}
+
+html {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  
+  height: 100%;
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  background-color:#121212;
+  height: 100%;
+  min-width: 600px;
+
+  background: -webkit-gradient(linear, left top, left bottom, from(#121212), to(#BB86FC)) fixed;
+
+}
+
+header{
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+header h1{
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+section{
+  height: 100%;
+}
+
+.filters {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 10px;
+  background-color: #242424;
+  margin-bottom: 1rem;
+}
+
+.filters label{
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+.filters select{
+  margin-right: 20px;
+}
+
+.filters input{
+  margin-left: 20px;
+}
+
+.content{
+  height: 100%;
+  width: 35%;
+  /*background-image: linear-gradient(to bottom right, #663399,#8e44ad);*/
+}
+
+.aside{
+  height: 100%;
+  width: 30%;
+  float: left;
+  display: block;
+}
+
+/*table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+table tbody {
+  height:15rem;
+  width: 100%;
+  overflow:auto;
+  display: inline-block;
+}
+
+*/
+
+th{
+  background-color: #21252a;
+  position: sticky;
+  top:0;
+}
+
+.btn-primary{
+  background-color: var(--primary);
+}
+
+.scrollbar {
+  position: relative;
+  height:22rem;
+  overflow: auto;
+}
+.scroll-y {
+  display: block;
+}
+
+.cyclists{
+  display: inline-block;
+  background-color: #363636;
+  color: rgba(187, 134, 252, 0.67);
+  width: 100%;
+  border-radius: 20px;
+  border-style: solid;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-bottom: 1rem;
+  padding: 20px;
+}
+
+.summary{
+  display: inline-block;
+  background-color: #282828;
+  color: #181818;
+  width: 100%;
+  border-radius: 20px;
+  border-style: solid;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-bottom: 1rem;
+  padding: 20px;
+}
+
+.summary p{
+  color: rgba(255, 255, 255, 0.67);
+}
+
+.cyclists li{
+  color: rgba(255, 255, 255, 0.67);
+}
+
+.selected{
+  background-color: var(--primary);
+}
